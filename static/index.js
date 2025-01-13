@@ -244,23 +244,23 @@ const ageDate = new Date(ageDifMs);
 const age = Math.abs(ageDate.getUTCFullYear() - 1970);
 
 const commands = {
-  help: "Available commands:\n\n- help: Show this message\n\n- whoami: About me\n\n- learning: What I'm learning\n\n- skills: My skills\n\n- gitHub: Visit my GitHub\n\n- discord: Add me on Discord\n\n- achievements: What are my achievments?\n\n- clear: Clear the terminal",
-  learning: "I am currently learning C# in Unity.",
-  skills:
-    "I code in Python, Lua, Godot, Java/TypeScript, HTML, CSS, Java, Batch & SH, and Swift. \n\nSome of my projects are available on my GitHub, this website in of itself is a project.",
-  github: "Visit my GitHub at https://github.com/Phantom8015",
-  whoami: `Hi there! My name is Evaan Chowdhry. I'm a ${age}-year-old developer from India. I'm a passionate programmer who's been coding since I was nine years old. Feel free to reach out to me at evaanchowdhry@gmail.com!`,
-  discord: "Add me on discord: phantom8015. (Don't forget the .)",
-  achievements: async function () {
-    totalDownloads = await getTotalDownloads(username);
-    showOutput(`I have got 2nd place in the STRIPE Senior Python Competition and 2nd place in the Stack Hacks hackathon. I also have ${totalDownloads}+ npm downloads across all of my packages. You can check out my NPM Profile at: https://www.npmjs.com/~phantom8015`, "success");
-  },
-  ls: function () {
-    fetchUserPackages(username).then((packages) => {
-      showOutput(packages.join("\n"), "success")
-    });
-  },
-    
+  help: "Available commands:\n\n- help: Show this message\n\n- evaporation: Learn about evaporation\n\n- condensation: Learn about condensation\n\n- precipitation: Learn about precipitation\n\n- sublimation: Learn about sublimation\n\n- transpiration: Learn about transpiration\n\n- runoff: Learn about runoff\n\n- infiltration: Learn about infiltration\n\n- summary: Recap the water cycle",
+  
+  evaporation: "Evaporation is the process by which a liquid turns into a gas at the surface of the liquid, typically below its boiling point. It occurs when molecules in the liquid gain enough energy to break free from the liquid's surface and become vapor. This happens faster at higher temperatures, with more surface area, and in dry or windy conditions. For example, Egypt experiences droughts due to immense heat causing increased evaporation.",
+  
+  condensation: "Condensation happens when water vapor rises into the atmosphere and cools down, turning back into liquid water (H2O). This process is a crucial part of the water cycle as water vapor in the air condenses to form clouds, eventually leading to precipitation.",
+  
+  precipitation: "Precipitation occurs when water droplets in clouds become too heavy to remain suspended and fall back to Earth. This can be in the form of rain, snow, sleet, or hail. Precipitation is an essential process in the water cycle as it brings water back to the Earth's surface.",
+  
+  sublimation: "Sublimation is the process where substances like dry ice (frozen CO2) turn directly from a solid to a gas without first becoming a liquid. In the water cycle, sublimation refers to ice or snow directly turning into vapor in the atmosphere without first melting into water.",
+  
+  transpiration: "Transpiration is when water evaporates from plant leaves, stems, and other parts into the atmosphere. This process not only cools the plants but also contributes to around 10% of the moisture in the atmosphere. It's an important part of the water cycle and helps maintain the balance of water in the environment.",
+  
+  runoff: "Runoff occurs when there is excess water that the land cannot absorb. This water either flows into rivers and lakes or evaporates. It’s essentially a form of mild flooding when water overflows onto land and starts to move toward lower ground.",
+  
+  infiltration: "Infiltration is the process where water moves from the surface into the soil and rocks below. It typically happens after precipitation, where water soaks into the ground, replenishing groundwater and contributing to the overall water cycle. This process is crucial for replenishing natural water sources.",
+  
+  summary: "To summarize, the water cycle involves the continuous flow of water on Earth through the stages of evaporation, condensation, precipitation, sublimation, transpiration, runoff, and infiltration. These stages work together to maintain the balance of water in the environment and sustain life on Earth.",    
 
   clear: function () {
     outputContainer.innerHTML = "";
