@@ -44,7 +44,7 @@ async function getTotalDownloads(username) {
 
 
 
-const username = 'phantom8015';
+const username = 'WaterCycle';
 
 let isClosed = false;
 let isMinimized = false;
@@ -235,7 +235,7 @@ window.addEventListener("load", () => {
 function updateTerminalTitle() {
   const rect = windowElement.getBoundingClientRect();
   const titleElement = document.getElementById("title");
-  titleElement.textContent = `Phantom8015 — -zsh — ${Math.round(rect.width)}x${Math.round(rect.height)}`;
+  titleElement.textContent = `WaterCycle — -zsh — ${Math.round(rect.width)}x${Math.round(rect.height)}`;
 }
 
 const birthday = new Date(2011, 5, 12);
@@ -311,7 +311,7 @@ async function showCommandOutput(command) {
     if (typeof response === "function") {
       const commandOutput = document.createElement("div");
       commandOutput.classList.add("command-output", responseClass);
-      commandOutput.textContent = `(base) Phantom8015@MacBook-Air ~ % ${command}\n`;
+      commandOutput.textContent = `(base) WaterCycle@MacBook-Air ~ % ${command}\n`;
       outputContainer.appendChild(commandOutput);
       await response()
       return;
@@ -320,7 +320,7 @@ async function showCommandOutput(command) {
 
   const commandOutput = document.createElement("div");
   commandOutput.classList.add("command-output", responseClass);
-  commandOutput.textContent = `(base) Phantom8015@MacBook-Air ~ % ${command}\n${response}`;
+  commandOutput.textContent = `(base) WaterCycle@MacBook-Air ~ % ${command}\n${response}`;
 
   outputContainer.appendChild(commandOutput);
   container.scrollTop = container.scrollHeight;
