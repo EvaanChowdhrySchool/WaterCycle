@@ -398,6 +398,11 @@ window.addEventListener("load", () => {
 
   initialLeft = centerX;
   initialTop = centerY;
+  const lastLoginText = `Last Login: ${new Date().toString().split(" ").slice(0, 5).join(" ")}`;
+  outputContainer.innerHTML = `
+    <div id="last-login">${lastLoginText}</div>
+    <div class="command-output">Type 'help' to get started.</div>
+`;
 });
 
 titleBar.addEventListener("dblclick", () => {
